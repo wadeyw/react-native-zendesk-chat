@@ -64,12 +64,6 @@ project(':react-native-zendesk-chat').projectDir = new File(rootProject.projectD
 compile project(':react-native-zendesk-chat')
 ```
 
-5. Configure `ZopimChat` in `android/app/main/java/[...]/MainActivity.java`
-
-```
-ZopimChat.init("YOUR_ZENDESK_ACCOUNT_KEY").build();
-```
-
 ## Usage
 
 In your code add:
@@ -78,6 +72,8 @@ In your code add:
 import ZendeskChat from 'react-native-zendesk-chat
 
 ...
+# YOUR_ZENDESK_ACCOUNT_KEY can refer https://support.zendesk.com/hc/en-us/articles/360022366613-How-do-I-find-my-Chat-Account-Key- 
+ZendeskChat.init("YOUR_ZENDESK_ACCOUNT_KEY");
 
 ZendeskChat.startChat({
   name: user.full_name,
